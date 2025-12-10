@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Security: CSP -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:;">
+    <title>Modern Halls & Living | India Space Interiors and Constructions</title>
+    <meta name="description"
+        content="Stunning living room and hall designs. TV units, wall paneling, and furniture setups that impress.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <style>
+        #panorama {
+            width: 100%;
+            height: 500px;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <div class="page-header" style="background-image: url('images/hall.png');">
+            <div class="container">
+                <h1>Living & <span class="text-gold">Halls</span></h1>
+                <p style="color: #ddd; max-width: 600px; margin: 0 auto;">Grand spaces for family gatherings and
+                    entertaining guests.</p>
+            </div>
+        </div>
+
+        <section class="section-padding detail-content">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 2rem;">
+                    <h2 class="text-gold">360° Virtual Tour</h2>
+                    <p style="color: var(--color-text-secondary);">Click and drag to rotate the view. Click the <span
+                            style="background:#fff; color:#000; padding:0 4px; border-radius:50%; font-size:0.8em; font-weight:bold;">i</span>
+                        icon for details.</p>
+                </div>
+
+                <div id="panorama"></div>
+                <script>
+                    pannellum.viewer('panorama', {
+                        "type": "equirectangular",
+                        "panorama": "images/hall_360.png",
+                        "autoLoad": true,
+                        "compass": true,
+                        "hotSpots": [
+                            {
+                                "pitch": 30,
+                                "yaw": 0,
+                                "type": "info",
+                                "text": "False Ceiling: Gypsum board with Philips COB lights"
+                            },
+                            {
+                                "pitch": 0,
+                                "yaw": -30,
+                                "type": "info",
+                                "text": "Wall Paneling: Natural Teak Veneer finish"
+                            },
+                            {
+                                "pitch": -20,
+                                "yaw": 150,
+                                "type": "info",
+                                "text": "Italian Leather Sofa: Custom built frame"
+                            }
+                        ]
+                    });
+                </script>
+
+                <div class="detail-grid" style="margin-top: 4rem;">
+                    <div>
+                        <h2 style="margin-bottom: 1rem;">The Centerpiece of Your Home</h2>
+                        <p style="color: var(--color-text-secondary); margin-bottom: 2rem;">
+                            The living room represents your style. It's where you host guests and spend family time. We
+                            ensure it makes a statement with grandeur and warmth.
+                        </p>
+
+                        <h3 class="text-gold" style="margin-bottom: 1rem;">Design Features</h3>
+                        <ul
+                            style="list-style: none; padding: 0; margin-bottom: 2rem; color: var(--color-text-secondary);">
+                            <li style="margin-bottom: 10px;">✓ <strong>TV Units:</strong> Italian Marble finish with
+                                back-lighting.</li>
+                            <li style="margin-bottom: 10px;">✓ <strong>False Ceiling:</strong> Gypsum designs
+                                (Tray/Rafter) with cove lights.</li>
+                            <li style="margin-bottom: 10px;">✓ <strong>Partitions:</strong> CNC Jali or Glass dividers.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding text-center" style="background-color: var(--color-bg-secondary);">
+            <h2 style="margin-bottom: 1rem;">Let's design your living space.</h2>
+            <a href="#contact" class="btn btn-primary">Contact Us Today</a>
+        </section>
+    </main>
+
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

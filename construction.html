@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Security: CSP -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:;">
+    <title>Renovation & Civil Work | India Space Interiors and Constructions</title>
+    <meta name="description"
+        content="Expert civil work and structural reconstruction for flats and houses. We shape your space to fit your dream interior design.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <style>
+        #panorama {
+            width: 100%;
+            height: 500px;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <div class="page-header" style="background-image: url('images/renovation.png');">
+            <div class="container">
+                <h1>Civil & <span class="text-gold">Renovation</span></h1>
+                <p style="color: #ddd; max-width: 600px; margin: 0 auto;">Refining your space to create the perfect
+                    canvas.</p>
+            </div>
+        </div>
+
+        <section class="section-padding detail-content">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 2rem;">
+                    <h2 class="text-gold">Interactive Site View</h2>
+                    <p style="color: var(--color-text-secondary);">Click and drag to rotate the view. Click the <span
+                            style="background:#fff; color:#000; padding:0 4px; border-radius:50%; font-size:0.8em; font-weight:bold;">i</span>
+                        icon for details.</p>
+                </div>
+
+                <div id="panorama"></div>
+                <script>
+                    pannellum.viewer('panorama', {
+                        "type": "equirectangular",
+                        "panorama": "images/construction_360.png",
+                        "autoLoad": true,
+                        "compass": true,
+                        "hotSpots": [
+                            {
+                                "pitch": -10,
+                                "yaw": 50,
+                                "type": "info",
+                                "text": "Brick Work: First-class red bricks with 1:4 cement mortar"
+                            },
+                            {
+                                "pitch": 30,
+                                "yaw": -20,
+                                "type": "info",
+                                "text": "Concealed Wiring: Finolex FR Grade in PVC conduits"
+                            },
+                            {
+                                "pitch": -40,
+                                "yaw": -120,
+                                "type": "info",
+                                "text": "Plumbing: Astral CPVC/UPVC Piping"
+                            }
+                        ]
+                    });
+                </script>
+
+                <div class="detail-grid" style="margin-top: 4rem;">
+                    <div>
+                        <h2 style="margin-bottom: 1rem;">Structural Reconstruction</h2>
+                        <p style="color: var(--color-text-secondary); margin-bottom: 2rem;">
+                            We don't just decorate; we build. If your flat or independent house needs layout changes,
+                            wall removal, or flooring upgrades, our civil team handles it with engineering precision.
+                        </p>
+
+                        <h3 class="text-gold" style="margin-bottom: 1rem;">Scope of Civil Work</h3>
+                        <ul
+                            style="list-style: none; padding: 0; margin-bottom: 2rem; color: var(--color-text-secondary);">
+                            <li style="margin-bottom: 10px;">✓ <strong>Demolition:</strong> Removal of walls/tiles
+                                safely.</li>
+                            <li style="margin-bottom: 10px;">✓ <strong>Masonry:</strong> New AAC/Brick walls &
+                                Plastering.</li>
+                            <li style="margin-bottom: 10px;">✓ <strong>Flooring:</strong> Granite, Marble, or Vitrified
+                                Tiles.</li>
+                            <li style="margin-bottom: 10px;">✓ <strong>Utilities:</strong> Complete Electrical &
+                                Plumbing overhaul.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

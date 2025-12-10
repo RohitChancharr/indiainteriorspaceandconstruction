@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How We Work | India Space Interiors and Constructions</title>
+    <meta name="description"
+        content="Our transparency work process: From measurement to handover. We ensure quality, timely updates, and flexibility at every step.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Process Logic Styles */
+        .process-timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        .process-timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 2px;
+            background: var(--color-border);
+            transform: translateX(-50%);
+        }
+
+        .process-step {
+            position: relative;
+            margin-bottom: 60px;
+            width: 50%;
+            padding: 0 40px;
+        }
+
+        .process-step:nth-child(odd) {
+            left: 0;
+            text-align: right;
+        }
+
+        .process-step:nth-child(even) {
+            left: 50%;
+            text-align: left;
+        }
+
+        .step-number {
+            position: absolute;
+            top: 0;
+            width: 40px;
+            height: 40px;
+            background: var(--color-accent-gold);
+            color: var(--color-bg-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            z-index: 10;
+        }
+
+        .process-step:nth-child(odd) .step-number {
+            right: -20px;
+        }
+
+        .process-step:nth-child(even) .step-number {
+            left: -20px;
+        }
+
+        .step-content {
+            background: var(--color-bg-secondary);
+            padding: 0;
+            border-radius: 4px;
+            border: 1px solid var(--color-border);
+            transition: var(--transition-smooth);
+            overflow: hidden;
+        }
+
+        .step-content:hover {
+            border-color: var(--color-accent-gold);
+            transform: translateY(-5px);
+        }
+
+        .step-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .step-text {
+            padding: 20px;
+        }
+
+        .step-text h3 {
+            color: var(--color-text-primary);
+            margin-bottom: 10px;
+        }
+
+        .step-text p {
+            color: var(--color-text-secondary);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            .process-timeline::before {
+                left: 20px;
+            }
+
+            .process-step {
+                width: 100%;
+                left: 0 !important;
+                padding-left: 60px;
+                text-align: left !important;
+            }
+
+            .step-number {
+                left: 0 !important;
+                right: auto !important;
+            }
+
+            .process-step:nth-child(odd) {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <div class="page-header" style="background-image: url('images/hero.png');">
+            <div class="container">
+                <h1>Our <span class="text-gold">Process</span></h1>
+                <p style="color: #ddd; max-width: 600px; margin: 0 auto;">Transparency, Quality, and Perfection at every
+                    step.</p>
+            </div>
+        </div>
+
+        <section class="section-padding">
+            <div class="container">
+                <div class="process-timeline">
+                    <!-- Step 1 -->
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <img src="images/process_measurement.png" alt="Measurement" class="step-img">
+                            <div class="step-text">
+                                <h3>Site Measurement</h3>
+                                <p>We visit your site to take precise measurements using laser tools. Understanding
+                                    every inch of the dimensions is the foundation of a perfect fit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <!-- Using bedroom image as design portfolio concept -->
+                            <img src="images/bedroom.png" alt="Design Planning" class="step-img">
+                            <div class="step-text">
+                                <h3>Design & Portfolio Plan</h3>
+                                <p>We walk you through our portfolio and create a layout plan based on your needs,
+                                    helping you visualize different style directions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <img src="images/process_materials.png" alt="Material Selection" class="step-img">
+                            <div class="step-text">
+                                <h3>Material Selection</h3>
+                                <p>We sit down with you to finalize materials—wood, laminates, fabrics, and hardware. We
+                                    ensure you know exactly what goes into your home.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <div class="step-text">
+                                <h3>Cost & Time Estimation</h3>
+                                <p>We provide a detailed quotation and a realistic timeline for completion. We believe
+                                    in complete transparency with no hidden costs.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <img src="images/renovation.png" alt="Project Kickoff" class="step-img">
+                            <div class="step-text">
+                                <h3>Project Kickoff</h3>
+                                <p>Once budget and plan are approved, our civil and interior teams begin the on-site
+                                    work immediately, sticking strictly to the schedule.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 6 -->
+                    <div class="process-step">
+                        <div class="step-number">6</div>
+                        <div class="step-content">
+                            <div class="step-text">
+                                <h3>Updates & Flexibility</h3>
+                                <p>We share regular progress updates. If you need changes mid-project, we remain
+                                    flexible to ensure the final result is exactly what you envisioned.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Step 7 -->
+                    <div class="process-step">
+                        <div class="step-number">7</div>
+                        <div class="step-content">
+                            <img src="images/process_handover.png" alt="Handover" class="step-img">
+                            <div class="step-text">
+                                <h3>Final Delivery</h3>
+                                <p>We hand over your transformed space, clean and ready to move in, ensuring every
+                                    detail meets our high quality standards.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center" style="margin-top: 4rem;">
+                    <a href="contact.html" class="btn btn-primary">Start Your Journey With Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
