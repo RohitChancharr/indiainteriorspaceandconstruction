@@ -16,6 +16,37 @@ document.addEventListener('DOMContentLoaded', () => {
             mobileBtn.classList.toggle('toggle');
         });
     }
+
+    // Scroll Animations (Reveal on Scroll)
+    const observerOptions = {
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target); // Only animate once
+            }
+        });
+    }, observerOptions);
+
+    // Auto-add .reveal class to major sections for animation
+    document.querySelectorAll('section h2, section p, .category-card, .review-card, .about-text').forEach(el => {
+        el.classList.add('reveal');
+        observer.observe(el);
+    });
+
+    // Navbar Background Transition
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
 });
 
 function renderHeader() {
