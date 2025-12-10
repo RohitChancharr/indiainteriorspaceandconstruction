@@ -124,6 +124,32 @@
     </main>
 
     <footer></footer>
+    <script>
+        function sendEmail(event) {
+            event.preventDefault();
+
+            // Get values
+            const name = document.getElementById('contact-name').value;
+            const phone = document.getElementById('contact-phone').value;
+            const service = document.getElementById('contact-service').value;
+            const message = document.getElementById('contact-message').value;
+
+            // Log for debugging
+            console.log("Sending email for:", name);
+
+            // Construct mailto link
+            const subject = `Inquiry for ${service} - ${name}`;
+            const body = `Name: ${name}%0D%0APhone: ${phone}%0D%0AService: ${service}%0D%0AMessage:%0D%0A${message}`;
+
+            // Force window location change
+            window.location.href = `mailto:rohitkumarunable@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+
+            // Optional: fallback alert if mail client doesn't open (rare)
+            setTimeout(() => {
+                // alert("If your email client didn't open, please email us directly at rohitkumarunable@gmail.com");
+            }, 1000);
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 
