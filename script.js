@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, observerOptions);
 
     // Auto-add .reveal class to major sections for animation
-    document.querySelectorAll('section h2, section p, .category-card, .review-card, .about-text, .feature-card, .stat-item, .philosophy-text, .philosophy-image, .project-item').forEach(el => {
+    document.querySelectorAll('section h2, section p, .category-card, .review-card, .about-text, .feature-card, .stat-item, .philosophy-text, .philosophy-image, .project-item, .service-card, .paint-swatch').forEach(el => {
         el.classList.add('reveal');
         observer.observe(el);
     });
@@ -81,6 +81,7 @@ function renderHeader() {
                         <a href="kitchen.html" data-page="kitchen">Kitchen</a>
                         <a href="bedroom.html" data-page="bedroom">Bedroom</a>
                         <a href="hall.html" data-page="hall">Hall</a>
+                        <a href="painting.html" data-page="painting">Painting</a>
                     </div>
                 </div>
                 <a href="contact.html" data-page="contact">Contact</a>
@@ -106,6 +107,7 @@ function renderFooter() {
                         <li><a href="kitchen.html">Modular Kitchens</a></li>
                         <li><a href="bedroom.html">Luxury Bedrooms</a></li>
                         <li><a href="hall.html">Modern Halls</a></li>
+                        <li><a href="painting.html">Painting Work</a></li>
                         <li><a href="#">Construction</a></li>
                     </ul>
                 </div>
