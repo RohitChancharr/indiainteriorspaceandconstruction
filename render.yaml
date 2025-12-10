@@ -1,6 +1,0 @@
-services:
-  - type: web
-    name: india-space-interior
-    env: static
-    staticPublishPath: .
-    branch: master
