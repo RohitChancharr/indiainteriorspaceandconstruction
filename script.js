@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, observerOptions);
 
     // Auto-add .reveal class to major sections for animation
-    document.querySelectorAll('section h2, section p, .category-card, .review-card, .about-text, .feature-card, .stat-item, .philosophy-text, .philosophy-image').forEach(el => {
+    document.querySelectorAll('section h2, section p, .category-card, .review-card, .about-text, .feature-card, .stat-item, .philosophy-text, .philosophy-image, .project-item').forEach(el => {
         el.classList.add('reveal');
         observer.observe(el);
     });
@@ -71,6 +71,7 @@ function renderHeader() {
             </div>
             <nav class="nav-links">
                 <a href="index.html" data-page="home">Home</a>
+                <a href="projects.html" data-page="projects">Our Projects</a>
                 <a href="about.html" data-page="about">About</a>
                 <a href="process.html" data-page="process">Process</a>
                 <a href="construction.html" data-page="construction">Construction</a>
