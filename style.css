@@ -964,3 +964,10 @@ footer {
         --spacing-xl: 4rem;
     }
 }
+/* Category Grid for Home Page */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
