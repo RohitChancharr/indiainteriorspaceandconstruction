@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, observerOptions);
 
     // Auto-add .reveal class to major sections for animation
-    document.querySelectorAll('section h2, section p, .category-card, .review-card, .about-text').forEach(el => {
+    document.querySelectorAll('section h2, section p, .category-card, .review-card, .about-text, .feature-card, .stat-item, .philosophy-text, .philosophy-image').forEach(el => {
         el.classList.add('reveal');
         observer.observe(el);
     });
